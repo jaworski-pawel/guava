@@ -179,6 +179,7 @@ public final class Uninterruptibles {
   @GwtIncompatible // concurrency
   @Beta
   public static void joinUninterruptibly(Thread toJoin, Duration timeout) {
+    //some changes
     joinUninterruptibly(toJoin, toNanosSaturated(timeout), TimeUnit.NANOSECONDS);
   }
 
